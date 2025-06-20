@@ -27,18 +27,7 @@ This is a simple **Quora-style** web application built using **Node.js**, **Expr
 
 ---
 
-## 📁 Folder Structure
 
-Quora-REST/
-│
-├── public/ # Static files (CSS/images if needed)
-├── views/ # EJS templates (form.ejs, index.ejs, edit.ejs, show.ejs)
-├── index.js # Main Express server file
-├── package.json
-└── README.md # Project documentation
-
-
----
 
 ## 📌 Routes Overview
 
