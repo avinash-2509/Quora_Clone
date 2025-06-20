@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create a New Post</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #f1f2f3;
+      font-family: 'Inter', sans-serif;
+    }
+
+    header {
+      background-color: white;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #b92b27;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 3rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .form-container h2 {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      background-color: #b92b27;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.4rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a82322;
+    }
+  </style>
+</head>
+<body>
+  <header>Quora</header>
+
+  <div class="form-container">
+    <h2>Create a New Post</h2>
+    <form action="http://localhost:8080/posts" method="POST">
+      <input type="text" name="username" placeholder="Enter your name" required>
+      <textarea name="content" placeholder="What's on your mind?" required></textarea>
+      <button type="submit">Post</button>
+    </form>
+  </div>
+</body>
+</html>
